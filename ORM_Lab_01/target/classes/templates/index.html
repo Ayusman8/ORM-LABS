@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link type="text/css" rel="stylesheet" href="styles/index.css" />
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Trainer Register</title>
+</head>
+
+<body>
+    <form class="form" method="post" action="/register" th:object="${trainer}">
+        <fieldset>
+            <input type="text" th:field="*{trainerId}" pattern="[A-Za-z]{2}-[0-9]{6,12}" required placeholder="Trainer Id">
+            <input type="text" th:field="*{fullName}" pattern="[A-Za-z\s]{5,75}" required placeholder="Full Name">
+            <input type="text" th:field="*{emailId}" pattern="[\w\d\.]\@[\w]+\.[\w]+" required placeholder="Email Id">
+            <input type="text" th:field="*{yearlyTarget}" pattern="[0-9]{1,3}" required placeholder="Yearly Target">
+            <input type="text" th:field="*{age}" pattern="[0-9]{1,3}" required placeholder="Age">
+            <input type="submit" value="submit">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

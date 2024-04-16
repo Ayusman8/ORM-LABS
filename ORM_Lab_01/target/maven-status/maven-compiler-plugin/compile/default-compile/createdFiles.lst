@@ -1,0 +1,8 @@
+com\tg\ormlabs\ORM_Lab_01\entities\Trainer.class
+com\tg\ormlabs\ORM_Lab_01\OrmLab01Application.class
+com\tg\ormlabs\ORM_Lab_01\controllers\TrainerController.class
+com\tg\ormlabs\ORM_Lab_01\service\TraningServices.class
+com\tg\ormlabs\ORM_Lab_01\dao\TrainerDao.class
+com\tg\ormlabs\ORM_Lab_01\config\AppDaoConfig.class
+com\tg\ormlabs\ORM_Lab_01\service\impl\TraningServiceImpl.class
+com\tg\ormlabs\ORM_Lab_01\dao\jpa\JpaTrainerDao.class
